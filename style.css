@@ -29,6 +29,16 @@ html, body {
     --whiteColor: #fff;
 }
 
+/* :root{
+    --sideBGColor: #040c15;
+    --themeColor: #00A78E;
+    --iconBGColor: #2C2F3F;
+    --textColor: #353535;
+    --bgColor:#101111;
+    --lightGreyColor: black;
+    --whiteColor: #fff;
+} */
+
 
 /* Header Start */
 header {
@@ -785,6 +795,36 @@ main {
     transform: scale(1);
 }
 
+.cer-filters {
+    position: relative;
+    display: flex;  /* Enable flexbox for centering */
+    align-items: center;  /* Center the buttons vertically */
+    justify-content: center;  /* Center the buttons horizontally */
+    width: 100%;  /* Optional: Ensures the container takes full width */
+}
+
+.filter-btn {
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    background-color: var(--themeColor);
+    color: var(--whiteColor);
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+    font-style: italic;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: var(--sideBGColor);
+}
+
+.filter-btn:hover {
+    border: 2px solid var(--themeColor);
+    background-color: var(--sideBGColor);
+}
+
 .resume-detail.certificates .resume-list {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     overflow: auto;
@@ -793,7 +833,7 @@ main {
 .resume-detail.certificates .resume-list .resume-item{
     height: calc((18rem - 2rem) / 2);
     padding: 20px;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 .resume-detail.certificates .resume-list .resume-item span {
@@ -857,6 +897,16 @@ main {
     }
     .resume-detail.skills .resume-item i {
         font-size: 2rem;
+    }
+    .filter-btn {
+        display: inline;
+        font-size: 10px;
+        color: var(--textColor);
+        background: var(--whiteColor);
+        border: 2px solid var(--themeColor);
+    }
+    .filter-btn:hover {
+        color: var(--whiteColor);
     }
 }
 

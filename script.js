@@ -60,6 +60,28 @@ resumeBtns.forEach((btn, idx) => {
     });
 });
 
+const filterButtons = document.querySelectorAll('.filter-btn');
+const certificates = document.querySelectorAll('.resume-detail.certificates .resume-list .resume-item');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+
+        certificates.forEach(cert => {
+            if (category === 'all' || cert.getAttribute('data-category') === category) {
+                cert.style.display = 'block';
+            } else {
+                cert.style.display = 'none';
+            }
+        });
+
+        // Highlight the active filter button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+    });
+});
+
+
 // function toggleExclusiveContent(header) {
 //     const allContent = document.querySelectorAll('.resume-list');
 //     const content = header.nextElementSibling;
