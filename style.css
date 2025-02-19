@@ -1052,7 +1052,7 @@ main {
 }
 
 .portfolio-box .tech {
-    margin: 5rem 0 1rem;
+    margin: 3rem 0 1rem;
     color: var(--themeColor);
     border-bottom: .2rem solid var(--sideBGColor);
     box-shadow: 0 2px 5px var(--sideBGColor); /* Example box-shadow */
@@ -1075,8 +1075,8 @@ main {
 .portfolio-box .live-github a {
     position: relative;
     display: inline-flex;
-    padding: .5rem;
-    font-size: 20px;
+    padding: .3rem;
+    font-size: 14px;
     color: var(--whiteColor);
     border-radius: 50%;
     background: var(--iconBGColor);
@@ -1100,7 +1100,7 @@ main {
     top: 100%;
     left: 60%;
     transform: translateX(-60%) scale(1);
-    font-size: 12px;
+    font-size: 10px;
     white-space: nowrap;
     padding: .2rem .1rem;
     pointer-events: none;
