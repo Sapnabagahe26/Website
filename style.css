@@ -1224,17 +1224,17 @@ main {
         font-weight: 400;
         margin: .2rem 0 .5rem;
     }
-    .live-github {
+    /*.live-github {
         display: flex;
-        justify-content: flex-start; /* Aligns the items (links) to the right */
-    }
-    .portfolio-box .tech {
+        justify-content: flex-start;  Aligns the items (links) to the right 
+    }*/
+    /* .portfolio-box .tech {
         margin: 1rem 0;
     }
     .portfolio-box .navigation {
-        /* margin-top: 3rem; 
-        justify-content: space-between;*/
-    }
+        margin-top: 3rem; 
+        justify-content: space-between;
+    } */
     .portfolio-box .navigation .more {
         margin-left: 40%;
         font-size: 14px;
